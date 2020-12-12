@@ -18,8 +18,8 @@ fn run_timed(f : fn()) {
     println!("Time: {:?}", duration);	
 }
 
-fn main() {
-	run_timed(day01::part1);
+fn all_days() {
+		run_timed(day01::part1);
 	run_timed(day01::part2);
 	println!("");
 
@@ -65,5 +65,9 @@ fn main() {
 
 	run_timed(day12::part1);
 	run_timed(day12::part2);
-	println!("");	
+	println!("");
+}
+
+fn main() {
+	run_timed(all_days);
 }
