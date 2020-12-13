@@ -10,6 +10,7 @@ mod day09;
 mod day10;
 mod day11;
 mod day12;
+mod day13;
 
 fn run_timed(f : fn()) {
 	let start = std::time::Instant::now();
@@ -19,7 +20,7 @@ fn run_timed(f : fn()) {
 }
 
 fn all_days() {
-		run_timed(day01::part1);
+	run_timed(day01::part1);
 	run_timed(day01::part2);
 	println!("");
 
@@ -65,6 +66,10 @@ fn all_days() {
 
 	run_timed(day12::part1);
 	run_timed(day12::part2);
+	println!("");
+	
+	run_timed(day13::part1);
+	run_timed(day13::part2);
 	println!("");
 }
 
